@@ -17,8 +17,21 @@ let myArray = new Array();
 oddNumbers(7, myArray);
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
-
+/*función-->recursiva
+num impares de 0 a n--> for(let i=0; i<10;i++){
+	if (n % 2 !== 0){
+	return n
+	}
+*/
+function oddNumbers(n, array) {
+    if (n<=0) {        
+        return array;
+    }
+    if (n%2!==0) {          
+       array.push(n) ;           
+    }
+    return oddNumbers(n-1,array);         
+}
 
 
 /**
