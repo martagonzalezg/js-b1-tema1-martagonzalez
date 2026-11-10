@@ -67,7 +67,10 @@ let planets = [
         }
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+function nombreYDiametro(planeta){
+    return [planeta.name,planeta.diameter];
+}
+const result= planets.map(nombreYDiametro);
 
 
 /**
